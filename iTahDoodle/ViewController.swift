@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.dataSource = todoList
+        tableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,3 +39,13 @@ class ViewController: UIViewController {
 
 }
 
+
+extension ViewController : UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = indexPath.row
+        todoList.removeItem(item)
+        print("Item: \(item)")
+        tableView.reloadData()
+    }
+
+}

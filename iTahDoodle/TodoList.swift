@@ -40,6 +40,17 @@ class TodoList: NSObject {
         items.append(item)
         saveItems()
     }
+    
+    func removeItem(item: Int) {
+        print("From model class: \(item)")
+        print("\(items)")
+//        let itemIdx = FIND(self.items, item)
+//        print("\(itemIdx)")
+        self.items.removeAtIndex(item)
+        saveItems()
+        print("\(items)")
+        
+    }
 }
 
 extension TodoList : UITableViewDataSource {
@@ -55,4 +66,19 @@ extension TodoList : UITableViewDataSource {
         
         return cell
     }
+//    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let item = items[indexPath.row]
+//        print("Item: \(item)")
+//        
+//    }
 }
+
+//extension TodoList : UITableViewDelegate {
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let item = items[indexPath.row]
+//        print("Item: \(item)")
+//        
+//    }
+//    
+//}
