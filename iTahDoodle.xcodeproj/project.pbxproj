@@ -14,6 +14,7 @@
 		2014E8091CE0F4DD00B6D622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2014E8071CE0F4DD00B6D622 /* LaunchScreen.storyboard */; };
 		2014E8141CE0F4DD00B6D622 /* iTahDoodleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014E8131CE0F4DD00B6D622 /* iTahDoodleTests.swift */; };
 		2014E81F1CE0F4DD00B6D622 /* iTahDoodleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014E81E1CE0F4DD00B6D622 /* iTahDoodleUITests.swift */; };
+		2014E8321CE0FCF700B6D622 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014E8311CE0FCF700B6D622 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2014E81A1CE0F4DD00B6D622 /* iTahDoodleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTahDoodleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2014E81E1CE0F4DD00B6D622 /* iTahDoodleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTahDoodleUITests.swift; sourceTree = "<group>"; };
 		2014E8201CE0F4DD00B6D622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2014E8311CE0FCF700B6D622 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2014E7FE1CE0F4DD00B6D622 /* AppDelegate.swift */,
 				2014E8001CE0F4DD00B6D622 /* ViewController.swift */,
 				2014E8021CE0F4DD00B6D622 /* Main.storyboard */,
+				2014E8311CE0FCF700B6D622 /* TodoList.swift */,
 				2014E8051CE0F4DD00B6D622 /* Assets.xcassets */,
 				2014E8071CE0F4DD00B6D622 /* LaunchScreen.storyboard */,
 				2014E80A1CE0F4DD00B6D622 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2014E8321CE0FCF700B6D622 /* TodoList.swift in Sources */,
 				2014E8011CE0F4DD00B6D622 /* ViewController.swift in Sources */,
 				2014E7FF1CE0F4DD00B6D622 /* AppDelegate.swift in Sources */,
 			);
