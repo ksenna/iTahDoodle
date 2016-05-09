@@ -27,12 +27,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-ow-u6N">
+                                <rect key="frame" x="20" y="67" width="560" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wae-ow-u6N" secondAttribute="bottom" constant="20" id="4Fo-0I-ePp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0gg-AV-FoI" secondAttribute="trailing" id="IVx-U0-Ier"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wae-ow-u6N" secondAttribute="trailing" id="Kvb-Df-6mQ"/>
                             <constraint firstItem="Prs-qg-kd2" firstAttribute="baseline" secondItem="0gg-AV-FoI" secondAttribute="baseline" id="Q0W-N4-Z8i"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Wae-ow-u6N" secondAttribute="leading" id="Q1l-6q-cCk"/>
                             <constraint firstItem="0gg-AV-FoI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z9O-gX-zWu"/>
+                            <constraint firstItem="Wae-ow-u6N" firstAttribute="top" secondItem="Prs-qg-kd2" secondAttribute="bottom" constant="8" id="f6P-rh-65n"/>
                             <constraint firstItem="0gg-AV-FoI" firstAttribute="leading" secondItem="Prs-qg-kd2" secondAttribute="trailing" constant="8" id="s3m-Wo-VND"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Prs-qg-kd2" secondAttribute="leading" id="ucd-xl-4rj"/>
                         </constraints>
