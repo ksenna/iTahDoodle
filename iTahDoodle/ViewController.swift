@@ -28,7 +28,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addButtonPressed(sender: UIButton) {
-        todoList.addItem(itemTextField.text!)
+        guard let text = itemTextField.text else {
+            return
+        }
+        todoList.addItem(text)
         tableView.reloadData()
     }
 
