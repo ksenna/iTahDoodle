@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gg-AV-FoI">
                                 <rect key="frame" x="540" y="28" width="40" height="30"/>
                                 <state key="normal" title="Insert"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyk-Lj-HZI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Todo Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Prs-qg-kd2">
                                 <rect key="frame" x="20" y="29" width="512" height="30"/>
@@ -45,6 +48,10 @@
                             <constraint firstAttribute="leadingMargin" secondItem="Prs-qg-kd2" secondAttribute="leading" id="ucd-xl-4rj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemTextField" destination="Prs-qg-kd2" id="Ucg-q5-ut1"/>
+                        <outlet property="tableView" destination="Wae-ow-u6N" id="gyE-Fy-Cp3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
